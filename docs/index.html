@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sapir — Portfolio</title>
+  <meta name="description" content="Sapir — developer portfolio. Projects, skills and contact." />
+  <style>
+    :root {
+      --bg: #0f1720;
+      --card: #0b1220;
+      --muted: #9aa4b2;
+      --accent: #4f46e5;
+      --glass: rgba(255,255,255,0.03);
+      --radius: 12px;
+      color-scheme: dark;
+    }
+    html,body{height:100%}
+    body {
+      margin:0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: linear-gradient(180deg, #031027 0%, #061427 100%);
+      color: #e6eef8;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    .container {
+      max-width: 920px;
+      margin: 48px auto;
+      padding: 24px;
+    }
+    header {
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap: 16px;
+    }
+    .brand {
+      display:flex;
+      gap:16px;
+      align-items:center;
+    }
+    .avatar {
+      width:64px;
+      height:64px;
+      border-radius:12px;
+      background:linear-gradient(135deg,#334155,#0ea5a9);
+      display:inline-block;
+      flex:0 0 64px;
+    }
+    h1 { margin:0; font-size:1.6rem; }
+    p.lead { margin:4px 0 0; color:var(--muted); }
+    nav a {
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:14px;
+      font-size:0.95rem;
+    }
+    .card {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border: 1px solid rgba(255,255,255,0.04);
+      padding:18px;
+      border-radius: var(--radius);
+      margin-top:18px;
+      box-shadow: 0 6px 20px rgba(2,6,23,0.55);
+    }
+    section { margin-top:24px; }
+    .projects { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin-top:12px; }
+    .project {
+      padding:14px;
+      border-radius:10px;
+      background:var(--card);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .project h3 { margin:0 0 6px 0; font-size:1rem; }
+    .project p { margin:0; color:var(--muted); font-size:0.95rem; }
+    .muted { color:var(--muted); font-size:0.95rem; }
+    .links a { color: var(--accent); text-decoration:none; margin-right:12px; }
+    footer { margin-top:30px; color:var(--muted); font-size:0.9rem; text-align:center; }
+    @media (max-width:560px){
+      header { flex-direction:column; align-items:flex-start; gap:12px; }
+      .brand { align-items:flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <h1>Sapir</h1>
+          <p class="lead">Full-stack developer — building useful web apps & automations</p>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about" class="card" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p class="muted">Hi — I’m Sapir, a software developer focused on building clean, reliable web applications. I enjoy working on full-stack projects, automations, and open-source tools.</p>
+        <p style="margin-top:10px;">Currently: exploring React + TypeScript, Node.js backends, and developer experience tooling.</p>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+          <article class="project">
+            <h3>Portfolio site (this repo)</h3>
+            <p class="muted">A simple portfolio served with GitHub Pages. Source: <a class="links" href="https://github.com/sapirj20-ai/sapir" target="_blank" rel="noopener">github.com/sapirj20-ai/sapir</a></p>
+          </article>
+
+          <article class="project">
+            <h3>Example Project</h3>
+            <p class="muted">Short description. Tech: React, Node, Postgres. Live / Repo links go here.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="card" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <p class="muted">JavaScript, TypeScript, React, Node.js, Express, SQL, Git, GitHub Actions, HTML, CSS.</p>
+      </section>
+
+      <section id="contact" class="card" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+        <p class="muted">Email: <a class="links" href="mailto:you@example.com">you@example.com</a></p>
+        <p class="muted">GitHub: <a class="links" href="https://github.com/sapirj20-ai" target="_blank" rel="noopener">github.com/sapirj20-ai</a></p>
+        <p class="muted">LinkedIn: <a class="links" href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">yourprofile</a></p>
+      </section>
+    </main>
+
+    <footer>
+      <div>© 2025 Sapir</div>
+    </footer>
+  </div>
+</body>
+</html>
