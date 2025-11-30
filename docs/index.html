@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sapir — Portfolio</title>
-  <meta name="description" content="Sapir — developer portfolio. Projects, skills and contact." />
+  <title>Sapir Cohen — Portfolio</title>
+  <meta name="description" content="Sapir Cohen — Project Manager & Product Engineer. Portfolio and CV." />
   <style>
     :root {
       --bg: #0f1720;
@@ -26,8 +26,8 @@
     }
     .container {
       max-width: 920px;
-      margin: 48px auto;
-      padding: 24px;
+      margin: 32px auto;
+      padding: 20px;
     }
     header {
       display:flex;
@@ -41,15 +41,15 @@
       align-items:center;
     }
     .avatar {
-      width:64px;
-      height:64px;
+      width:72px;
+      height:72px;
       border-radius:12px;
       background:linear-gradient(135deg,#334155,#0ea5a9);
       display:inline-block;
-      flex:0 0 64px;
+      flex:0 0 72px;
     }
     h1 { margin:0; font-size:1.6rem; }
-    p.lead { margin:4px 0 0; color:var(--muted); }
+    p.lead { margin:6px 0 0; color:var(--muted); }
     nav a {
       color:var(--muted);
       text-decoration:none;
@@ -64,7 +64,8 @@
       margin-top:18px;
       box-shadow: 0 6px 20px rgba(2,6,23,0.55);
     }
-    section { margin-top:24px; }
+    section { margin-top:18px; }
+    .columns { display:grid; grid-template-columns: 1fr 320px; gap:18px; }
     .projects { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:14px; margin-top:12px; }
     .project {
       padding:14px;
@@ -73,14 +74,12 @@
       border:1px solid rgba(255,255,255,0.03);
     }
     .project h3 { margin:0 0 6px 0; font-size:1rem; }
-    .project p { margin:0; color:var(--muted); font-size:0.95rem; }
     .muted { color:var(--muted); font-size:0.95rem; }
     .links a { color: var(--accent); text-decoration:none; margin-right:12px; }
+    ul { margin:8px 0 0 18px; }
     footer { margin-top:30px; color:var(--muted); font-size:0.9rem; text-align:center; }
-    @media (max-width:560px){
-      header { flex-direction:column; align-items:flex-start; gap:12px; }
-      .brand { align-items:flex-start; }
-    }
+    @media (max-width:980px){ .columns{grid-template-columns:1fr;} }
+    @media (max-width:560px){ header { flex-direction:column; align-items:flex-start; gap:12px; } .brand { align-items:flex-start; } }
   </style>
 </head>
 <body>
@@ -89,55 +88,82 @@
       <div class="brand">
         <div class="avatar" aria-hidden="true"></div>
         <div>
-          <h1>Sapir</h1>
-          <p class="lead">Full-stack developer — building useful web apps & automations</p>
+          <h1>Sapir Cohen</h1>
+          <p class="lead">Tel Aviv — Results-driven project manager & product engineer</p>
         </div>
       </div>
       <nav aria-label="Main navigation">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
 
     <main>
-      <section id="about" class="card" aria-labelledby="about-heading">
-        <h2 id="about-heading">About</h2>
-        <p class="muted">Hi — I’m Sapir, a software developer focused on building clean, reliable web applications. I enjoy working on full-stack projects, automations, and open-source tools.</p>
-        <p style="margin-top:10px;">Currently: exploring React + TypeScript, Node.js backends, and developer experience tooling.</p>
-      </section>
+      <div class="columns">
+        <div>
+          <section id="about" class="card" aria-labelledby="about-heading">
+            <h2 id="about-heading">Profile</h2>
+            <p class="muted">Results-driven project manager with over 6 years of experience in SaaS B2B product delivery operations, process optimization, and cross-functional project delivery. Proven ability to lead end-to-end implementations, automate workflows, and enhance operational efficiency. Skilled in translating business requirements into scalable technical solutions, managing stakeholder expectations, and driving continuous improvement through data analysis and Lean Six Sigma methodologies.</p>
+          </section>
 
-      <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects">
-          <article class="project">
-            <h3>Portfolio site (this repo)</h3>
-            <p class="muted">A simple portfolio served with GitHub Pages. Source: <a class="links" href="https://github.com/sapirj20-ai/sapir" target="_blank" rel="noopener">github.com/sapirj20-ai/sapir</a></p>
-          </article>
+          <section id="experience" class="card" aria-labelledby="experience-heading">
+            <h2 id="experience-heading">Experience</h2>
 
-          <article class="project">
-            <h3>Example Project</h3>
-            <p class="muted">Short description. Tech: React, Node, Postgres. Live / Repo links go here.</p>
-          </article>
+            <h3 style="margin-top:8px;">Product Engineer — Verint</h3>
+            <div class="muted">Feb 2025 – Present</div>
+            <ul>
+              <li>Lead the replacement of a legacy licensing system with an automated platform integrated across sales, support, and fulfillment teams. Delivered PRDs, flowcharts, and post-launch improvements.</li>
+              <li>Designing and implementing an internal chatbot for the fulfillment team, including maintaining a fulfillment knowledge base with monthly updates, instructional videos, and Tier 1 support training sessions. Currently leading Phase 2 integration with Oracle & ServiceNow databases for automated data retrieval for internal customers.</li>
+              <li>Collaborated with five cross-functional teams to define and implement a hybrid licensing model for cloud/on-prem customers.</li>
+            </ul>
+
+            <h3 style="margin-top:10px;">Fulfillment Operations Engineer — Verint</h3>
+            <div class="muted">Feb 2022 – Feb 2025</div>
+            <ul>
+              <li>Managed customer license deliveries and supported escalated technical cases, ensuring SLA and KPI compliance across global operations.</li>
+              <li>Applied Lean Six Sigma methodologies to measure project performance, identify inefficiencies, and implement scalable process improvements.</li>
+              <li>Developed and maintained a strategic Software Bill of Materials (SBOM) infrastructure in Agile PLM, supporting license mapping and automation across multiple teams.</li>
+            </ul>
+
+            <h3 style="margin-top:10px;">Data Analyst & Operations Coordinator — EY Israel</h3>
+            <div class="muted">Feb 2021 – Feb 2022</div>
+            <ul>
+              <li>Conducted data analysis for a unified logistics system across governmental hospitals.</li>
+              <li>Developed SAP ERP training materials and procedures for end users.</li>
+              <li>Delivered actionable insights from medical center data to support operational decisions.</li>
+            </ul>
+          </section>
+
+          <section id="education" class="card" aria-labelledby="education-heading">
+            <h2 id="education-heading">Education</h2>
+            <div class="muted">2016 – 2022</div>
+            <p class="muted">Industrial Engineering and Management, Afeka — Specialization in Information Systems</p>
+          </section>
+
+          <section id="skills" class="card" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <p class="muted">ERP (SAP, Oracle, Salesforce, PLM) • ServiceNow, Jira, Confluence • Fluent English • Technical Documentation & Training • Data Analysis (DOMO, OAC, SQL) • Automation & implementation processes • Lean Six Sigma</p>
+          </section>
         </div>
-      </section>
 
-      <section id="skills" class="card" aria-labelledby="skills-heading">
-        <h2 id="skills-heading">Skills</h2>
-        <p class="muted">JavaScript, TypeScript, React, Node.js, Express, SQL, Git, GitHub Actions, HTML, CSS.</p>
-      </section>
+        <aside class="card">
+          <h2>Contact</h2>
+          <p class="muted">Email: <a class="links" href="mailto:Sapirj20@gmail.com">Sapirj20@gmail.com</a></p>
+          <p class="muted">Phone: <a class="links" href="tel:+972528551417">052-8551417</a></p>
+          <p class="muted">Location: Tel Aviv</p>
+          <p class="muted">LinkedIn: <a class="links" href="https://www.linkedin.com/in/sapir-cohen-a69015171" target="_blank" rel="noopener">sapir-cohen-a69015171</a></p>
 
-      <section id="contact" class="card" aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact</h2>
-        <p class="muted">Email: <a class="links" href="mailto:you@example.com">you@example.com</a></p>
-        <p class="muted">GitHub: <a class="links" href="https://github.com/sapirj20-ai" target="_blank" rel="noopener">github.com/sapirj20-ai</a></p>
-        <p class="muted">LinkedIn: <a class="links" href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener">yourprofile</a></p>
-      </section>
+          <h3 style="margin-top:12px;">Quick summary</h3>
+          <p class="muted">Project manager & product engineer experienced in SaaS B2B delivery, operations automation, and cross-functional implementations.</p>
+        </aside>
+      </div>
     </main>
 
     <footer>
-      <div>© 2025 Sapir</div>
+      <div>© 2025 Sapir Cohen</div>
     </footer>
   </div>
 </body>
